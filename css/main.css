@@ -37,9 +37,11 @@
     width: 100px;
     height: 160px;
   }
-  fieldset{
-    width: 80px;
-    margin: 10px;
+  .publicado{
+    border-color: black;
+    margin: 10px 5px 0 0;
+    border-style: solid;
+    width: 750px;
   }
 
   .contenedor-contenido-pagina {
@@ -47,6 +49,10 @@
   padding: 21px;
   width: 1200px;
   }
+  /*p{
+    width: 300px;
+    padding: 10px;
+  }*/
   .option-content{
     width: 100px;
     height: 22px;

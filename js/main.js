@@ -1,24 +1,5 @@
-/*
-      var myParam = location.search.split('nombre=')[1];
-        var saludo = document.getElementById("nom");
-        if (myParam == undefined) {
-            var nom = prompt('¿Cual es tu nombre?');
-
-            while(nom=="" || nom==null)
-            {
-              nom = prompt("Ingrese su nombre por favor");
-            }
-            saludo.textContent = nom;
-        } else {
-            saludo.textContent = myParam;
-        }
-        document.getElementById("coders").addEventListener('click',function() {
-        this.href += "?nombre="+saludo.textContent;
-      })
-*/
 var correo      = document.getElementById("mail");
 var contra      = document.getElementById("pass");
-
 
 document.getElementById("validacion").addEventListener("click", function(){
 
@@ -57,31 +38,29 @@ document.getElementById("validacion").addEventListener("click", function(){
 });
 
 function validarCuentas(a, b){
-  console.log("entre valdiar");
+  var m = "";
   var correos = [
-                  {nombre: "Miriam", correo: "miriammp1997@gmail.com", password: "miriammendoza"},
-                  {nombre: "Carmen", correo: "maricarmen@gmail.com", password: "carmenmendoza"},
-                  {nombre: "Lizeth", correo: "lizethlucia@gmail.com", password: "lizethmendoza"}
+                  {nombre: "Miriam Gisella", correo: "miriammp1997@gmail.com", password: "miriammendoza"},
+                  {nombre: "Maria del Carmen", correo: "maricarmen@gmail.com", password: "carmenmendoza"},
+                  {nombre: "Lizeth Lucia", correo: "lizethlucia@gmail.com", password: "lizethmendoza"}
                 ];
 
   var  cont = 0;
   correos.forEach(function(e){
     if (a == e.correo && b == e.password) {
       cont++;
+      m= e.nombre
     }
   });
 
 
-  if(cont == 1){
+  if(cont == 1) {
+    localStorage.setItem("usuario-correo", m);
+    window.location="muro.html";
 
-    alert("Ingresaste");
-    window.location="muro.html"
+
   }
   else{
     alert("Usted no se encuentra registrado");
-
-
   }
-
-
 }
