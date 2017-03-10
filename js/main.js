@@ -30,6 +30,7 @@ function validar(){
   //e-mail
 
   if(!expRegEmail.test(correo.value)) {
+    passError.innerHTML = "";
     if(!correo.value){
       emailError.innerHTML= "El campo de usuario no puede estar en blanco";
       correo.focus();
@@ -37,7 +38,8 @@ function validar(){
       emailError.innerHTML= "Ingrese correo válido";
       correo.focus();
     }
-  } else if(!expRegPass.test(contra.value)){
+  } else if(!expRegPass.test(contra.value)) {
+    emailError.innerHTML= "";
     if(!contra.value){
       passError.innerHTML = " El campo de contraseña no puede estar en blanco";
       passError.focus();
@@ -71,10 +73,12 @@ function validarCuentas(a, b){
 
 
   if(cont == 1){
-    console.log("bien");
+    alert("Ingresaste");
+
   }
   else{
-    console.log("persona equivocada")
+    alert("Usted no se encuentra registrado");
+
   }
 
 
