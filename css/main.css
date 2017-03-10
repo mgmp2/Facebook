@@ -20,10 +20,55 @@
 
   }
 
-  /*input[type="button"]{
-    width: 80px;
-    height: 30px;
-  }*/
+  input[type="button"]{
+    background-color: #ebedde  ;
+  }
   span{
     color: red;
+  }
+
+  .thumb {
+    height: 75px;
+    border: 1px solid #000;
+    margin: 10px 5px 0 0;
+  }
+
+  .field-content{
+    width: 100px;
+    height: 160px;
+  }
+  fieldset{
+    width: 80px;
+    margin: 10px;
+  }
+
+  .contenedor-contenido-pagina {
+  margin: 0 auto;
+  padding: 21px;
+  width: 1200px;
+  }
+  .option-content{
+    width: 100px;
+    height: 22px;
+  }
+
+  .box-select{
+    /*si tengo mi type="file" usar esta dimension
+    padding-left: 240px; */
+    padding-left: 480px;
+  }
+
+  .flechita select {
+
+
+}
+  #list{
+    margin: 0 auto;
+  }
+
+  a{
+    margin: 5px;
+  }
+  p{
+    padding: 20px;
   }

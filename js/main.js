@@ -75,7 +75,7 @@ function validarCuentas(a, b){
   if(cont == 1){
 
     alert("Ingresaste");
-
+    window.location="muro.html"
   }
   else{
     alert("Usted no se encuentra registrado");
