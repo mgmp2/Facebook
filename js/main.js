@@ -20,7 +20,7 @@ var correo      = document.getElementById("mail");
 var contra      = document.getElementById("pass");
 
 
-function validar(){
+document.getElementById("validacion").addEventListener("click", function(){
 
   var expRegEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
   var expRegPass  = /^[a-zA-z]{6,}$/;
@@ -52,7 +52,7 @@ function validar(){
     validarCuentas(correo.value, contra.value);
   }
 
-}
+});
 
 function validarCuentas(a, b){
   console.log("entre valdiar");
@@ -71,10 +71,16 @@ function validarCuentas(a, b){
 
 
   if(cont == 1){
+    alert("Muy bien");
     console.log("bien");
+
+
+
   }
   else{
-    console.log("persona equivocada")
+    alert("Usted no está identificado");
+    console.log("persona equivocada");
+
   }
 
 
