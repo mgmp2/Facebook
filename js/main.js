@@ -19,7 +19,9 @@ document.getElementById("validacion").addEventListener("click", function(){
       emailError.innerHTML= "Ingrese correo válido";
       correo.focus();
     }
-  } else if(!expRegPass.test(contra.value)) {
+  }
+
+  if(!expRegPass.test(contra.value)) {
     emailError.innerHTML= "";
     if(!contra.value){
       passError.innerHTML = " El campo de contraseña no puede estar en blanco";

@@ -65,6 +65,7 @@ if(localStorage.getItem("usuario-correo")){
   document.getElementById("salir").addEventListener("click", function(){
     var xSalir ="";
     localStorage.setItem("usuario-correo", xSalir);
+    console.log("dddd"+x-salir);
     window.location = "index.html";
   });}
   else{
